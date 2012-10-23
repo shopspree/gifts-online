@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Module configuration
+ *
+ * @author asafam
+ */
+-->
+<config>
+    <modules>
+        <Gifts_MagentoGifts>
+            <version>0.1.0</version>
+        </Gifts_MagentoGifts>
+    </modules>
+	
+	<global>
+        <blocks>
+            <gifts_magentogifts>
+                <class>Gifts_MagentoGifts_Block_Buyer</class>
+            </gifts_magentogifts>
+        </blocks>
+	</global>
+	
+	<frontend>
+        <routers>
+            <gifts_magentogifts>
+                <use>standard</use>
+                <args>
+                    <module>Gifts_MagentoGifts</module>
+                    <frontName>gifts</frontName>
+                </args>
+            </gifts_magentogifts>
+			
+			<gifts_magentogifts_buyer>
+                <use>standard</use>
+                <args>
+                    <module>Gifts_MagentoGifts</module>
+                    <frontName>gifts/buyer</frontName>
+                </args>
+            </gifts_magentogifts_buyer>
+        </routers>
+        <layout>
+            <updates>
+                <gifts_magentogifts>
+                    <file>gifts_magentogifts.xml</file>
+                </gifts_magentogifts>
+            </updates>
+        </layout>
+	</frontend>
+	
+</config>
+	
