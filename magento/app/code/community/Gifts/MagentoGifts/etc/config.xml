@@ -30,14 +30,6 @@
                     <frontName>gifts</frontName>
                 </args>
             </gifts_magentogifts>
-			
-			<gifts_magentogifts_buyer>
-                <use>standard</use>
-                <args>
-                    <module>Gifts_MagentoGifts</module>
-                    <frontName>gifts/buyer</frontName>
-                </args>
-            </gifts_magentogifts_buyer>
         </routers>
         <layout>
             <updates>
